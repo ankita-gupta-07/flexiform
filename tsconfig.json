@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Transpile to ES5 for compatibility
+    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enable interop for ES modules and CommonJS
+    "allowSyntheticDefaultImports": true, // Allow default imports for CommonJS modules
+    "strict": true, // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file imports
+    "module": "esnext", // Use ES module system
+    "moduleResolution": "node", // Use Node.js module resolution
+    "resolveJsonModule": true, // Allow importing .json files
+    "jsx": "react-jsx", // JSX transform for React 17+ (you can use "react" for older React versions)
+    "baseUrl": ".", // Base directory for relative imports
+    "paths": {
+      "@/*": ["src/*"] // Path alias for the `src` directory
+    }
+  },
+  "include": [
+    "src/**/*" // Include all files in the `src` directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude the `node_modules` directory
+    "build", // Exclude the build folder if present
+    "dist" // Exclude the dist folder if present
+  ]
+}
