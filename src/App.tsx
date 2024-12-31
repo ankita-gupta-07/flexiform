@@ -1,16 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import EditorPage from "./pages/EditorPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Builder from "./pages/Builder";
+import { FormProvider } from "./context/FormContext";
 
 const App: React.FC = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/editor" element={<EditorPage />} />
-      {/*<Route path="/preview" element={<PreviewPage />} />*/}
-    </Routes>
-  </Router>
+  <FormProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/builder" element={<Builder />} />
+      </Routes>
+    </Router>
+  </FormProvider>
 );
 
 export default App;
