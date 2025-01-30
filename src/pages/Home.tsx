@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home: React.FC = () => (
   <div className="p-16">
     <h1 className="text-2xl font-bold mb-4 text-blue-700">
-      Welcome to React Form Builder
+      Welcome to React Form Builder - Flexiform
     </h1>
     <div className="px-4 py-2">
       <Link to="/builder" className="bg-blue-500 px-4 py-2 text-white  rounded">
